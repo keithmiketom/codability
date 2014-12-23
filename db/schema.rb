@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141223182345) do
+ActiveRecord::Schema.define(:version => 20141223212515) do
+
+  create_table "answers", :force => true do |t|
+    t.string   "answer"
+    t.boolean  "correct"
+    t.integer  "question_id"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
+  end
 
   create_table "details", :force => true do |t|
     t.string   "name"
@@ -32,6 +40,12 @@ ActiveRecord::Schema.define(:version => 20141223182345) do
     t.boolean  "free"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
+  end
+
+  create_table "questions", :force => true do |t|
+    t.string   "question"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
 end
