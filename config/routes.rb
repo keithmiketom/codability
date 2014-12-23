@@ -1,4 +1,25 @@
 Codability::Application.routes.draw do
+  get "results/atai"
+
+  get "results/cesi"
+
+  get "results/survey"
+
+  get "results/test"
+
+  get "results/individual"
+  
+  get "results/index"
+
+  resources :learns
+
+
+  get "site/about"
+
+  get "site/index"
+
+  get "site/learn"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -48,7 +69,7 @@ Codability::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
+  root :to => 'site#index'
 
   # See how all your routes lay out with "rake routes"
 

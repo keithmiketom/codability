@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @learn.title %>
+</p>
+
+<p>
+  <b>Site:</b>
+  <%= @learn.site %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @learn.description %>
+</p>
+
+<p>
+  <b>Free:</b>
+  <%= @learn.free %>
+</p>
+
+
+<%= link_to 'Edit', edit_learn_path(@learn) %> |
+<%= link_to 'Back', learns_path %>

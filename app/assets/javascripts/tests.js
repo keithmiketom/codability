@@ -513,7 +513,7 @@
             },
             series: [{
                 type: 'pie',
-                name: 'Are you registerd to teach this second subject with teaching council?',
+                name: 'registered?',
                 data: [
                     ['No',   43.18],
                     ['Don\'t know', 15.91 ],
