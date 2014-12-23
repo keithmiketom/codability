@@ -39,6 +39,26 @@ Codability::Application.routes.draw do
 
   get "site/learn"
 
+
+#test functionality
+
+  get "aptitude/index"
+  
+  post "aptitude/start"
+  
+  get "aptitude/question"
+  
+  post "aptitude/question"
+  
+  post "aptitude/answer"
+  
+  get "aptitude/end"
+
+  post "answers/create"
+  
+  post "answers/destroy"
+  
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

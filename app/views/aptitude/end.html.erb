@@ -1,2 +1,14 @@
-<h1>Aptitude#end</h1>
-<p>Find me in app/views/aptitude/end.html.erb</p>
+<h1>Aptitude Results</h1>
+<p id="question">You answered correctly <%= @correct %> out of <%= @total %> questions.</p>
+
+<p id="score"><%= @score %>%</p>
+
+<%= form_tag({:controller => "aptitude", :action => "index"}, :method => "get") do %>
+  <div class="center">
+	 <%= submit_tag("Retake Test", :class => "submit") %>
+  </div>
+<% end %>
+
+<% content_for(:title) do %>
+  Quiz Results
+<% end %>
