@@ -46,3 +46,21 @@ aside.deviseside a:hover, footer a:hover{
   color:yellow;
 }
 
+.survey{
+  list-style:none;
+   a {
+    border:1px solid darken(teal, 20%);
+    border-radius:2px;
+    padding:3px 4px;
+    color:white;
+    background-color:teal;
+    font-size:0.8em;
+    text-decoration:none;
+    &:hover{
+      color:black;
+      background-color:yellow;
+      
+    }
+
+}
+}

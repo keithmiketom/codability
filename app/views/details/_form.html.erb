@@ -1,0 +1,26 @@
+<%= simple_form_for(@detail) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :name, :label => 'Please tell me your name' %>
+    &nbsp;  &nbsp;<%= f.input :age, collection: 10..80, :label => 'How old are you?' %>
+    <%= f.input :email, :label => 'Please submit email, so we can send you results' %>
+
+   <%= f.label :profession, 'What Profession/background are you from?'%>
+    &nbsp;<%= f.select :profession, Detail::PROFESSIONS, :label => 'What Profession/background are you from?', :required => true %><br /><br />
+   <%= f.label :lengthteach, 'If a teacher, how long have you been teaching?'%>
+    &nbsp;<%= f.select :lengthteach, Detail::TEACHLENGTH, :label => 'If a teacher, how long have you been teaching?', :required => true %><br /><br />
+   <%= f.label :location, 'What area do you live/work in?' %>
+    &nbsp;<%= f.select :lengthteach, Detail::LOCATION, :label => 'What area do you live/work in?', :required => true %>
+    <br /><br />
+   <%= f.label :ictlevel, 'From a scale of one to five, 1 being no competance, and 5 being very competant, how competant are your ICT skills?' %>
+    &nbsp;<%= f.select :ictlevel, Detail::PROFICIENCY, :label => 'What area do you live/work in?', :required => true %>
+    
+    <p>Please click the box to allow your anonymous results being included in this research study.</p>
+    <%= f.check_box :research, :name => 'Do you consent', :checked => 'checked', as: :boolean %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>

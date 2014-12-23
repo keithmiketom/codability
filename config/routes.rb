@@ -1,4 +1,7 @@
 Codability::Application.routes.draw do
+  resources :details
+
+
   get "results/atai"
 
   get "results/cesi"

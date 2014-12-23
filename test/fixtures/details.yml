@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  age: 1
+  email: MyString
+  lengthteach: 1
+  profession: MyString
+  ictlevel: 1
+  research: false
+
+two:
+  name: MyString
+  age: 1
+  email: MyString
+  lengthteach: 1
+  profession: MyString
+  ictlevel: 1
+  research: false
