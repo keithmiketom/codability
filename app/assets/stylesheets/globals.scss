@@ -1,0 +1,48 @@
+@import url(http://fonts.googleapis.com/css?family=Michroma|Anonymous+Pro:400,700|Oxygen|Pacifico);
+html, body {height: 100%;}
+
+#wrap {min-height: 100%;}
+
+#main {overflow:auto;
+  padding-bottom: 250px;}  /* must be same height as the footer */
+
+#footer {position: relative;
+  margin-top: -250px; /* negative value of footer height */
+  height: 250px;
+  clear:both;} 
+
+/*Opera Fix*/
+body:before {
+  content:"";
+  height:100%;
+  float:left;
+  width:0;
+  margin-top:-32767px;/
+}
+
+body {text-align:justify; font-family: Oxygen;}
+h1 {font-family:Pacifico;}
+h1.title a {font-family:Michroma;color:yellow;text-decoration: none;}
+h1.title a:hover {font-family:Michroma;color:hsl(109, 84%, 50%); 
+font-style:oblique;
+text-decoration: none;}
+
+
+article{background-color:hsla(226, 94%, 50%, 0.2);padding:10px 20px 30px;margin-bottom:30px;border-top-right-radius: 40px;}
+aside{margin-bottom:30px;}
+
+.button {background-color:teal; padding: 10px 20px; border:1px solid black; border-radius:50px; }
+.button{color:white;text-decoration:none;}
+
+
+aside.deviseside a, footer a{
+  color:white;
+  text-decoration:none;
+  
+  
+}
+
+aside.deviseside a:hover, footer a:hover{
+  color:yellow;
+}
+

@@ -1,0 +1,71 @@
+// Place all the styles related to the learns controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+td a{
+  text-decoration:none;color:black;
+  &:hover{
+    text-decoration:underline;
+  }
+}
+
+table {
+  margin:0px;padding:0px;
+  width:100%;
+  box-shadow: 10px 10px 5px #888888;
+  border:1px solid #1b557c;
+  border-collapse: collapse;
+  border-spacing: 0;
+  height:100%;
+}
+ tr:nth-child(odd){ background-color:#6296c9; }
+ tr:nth-child(even)    { background-color:#ffffff; } 
+ td{
+  vertical-align:middle;
+  border:1px solid #1b557c;
+  border-width:0px 1px 1px 0px;
+  text-align:center;
+  padding:10px;
+  font-size:10px;
+  font-family:Helvetica;
+  font-weight:normal;
+  color:#000000;
+} tr:last-child td{
+  border-width:0px 1px 0px 0px;
+} tr td:last-child{
+  border-width:0px 0px 1px 0px;
+} tr:last-child td:last-child{
+  border-width:0px 0px 0px 0px;
+}
+ tr:first-child td{
+  background-color:#7eb1e5;
+  border:0px solid #1b557c;
+  text-align:center;
+  border-width:0px 0px 1px 1px;
+}
+
+.learnable {
+  width:40%;
+  min-width:300px;
+  padding:10px 15px 20px;
+  background-color:hsla(226, 94%, 50%, 0.2);
+  border-top-right-radius:40px;
+  margin:10px 10px;
+  float:left;
+  h2 {font-family:Michroma;
+  }
+  a {
+    border:1px solid darken(teal, 20%);
+    border-radius:2px;
+    padding:3px 4px;
+    color:white;
+    background-color:teal;
+    font-size:0.8em;
+    text-decoration:none;
+    &:hover{
+      color:black;
+      background-color:yellow;
+      
+    }
+  }
+}
