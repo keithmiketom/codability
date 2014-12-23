@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 
   def index
     @questions = Question.all
-     @questions.sort! {|a,b| a.text <=> b.text}
+     @questions.sort! {|a,b| a.question <=> b.question}
     respond_with(@questions)
   end
 

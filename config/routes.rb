@@ -1,4 +1,14 @@
 Codability::Application.routes.draw do
+  get "aptitude/start"
+
+  get "aptitude/end"
+
+  get "aptitude/question"
+
+  get "aptitude/answer"
+
+  get "aptitude/index"
+
   resources :answers
 
 

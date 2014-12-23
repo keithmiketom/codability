@@ -7,7 +7,7 @@ class AnswersController < ApplicationController
    @question = Question.find(params[:question])
    answer = params[:answer]
    correct = params[:correct] == "1"
-   new = answer.create(:answer => answer, :correct => correct, :question_id => @question.id)
+   new = Answer.create(:answer => answer, :correct => correct, :question_id => @question.id)
    
    if new.correct
     @question.answer = new
