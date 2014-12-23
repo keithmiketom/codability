@@ -20,6 +20,19 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+#Added Gems
+gem "rails-boilerplate"
+gem 'devise'
+
+gem 'simple_form'
+
+gem 'chart-js-rails'
+
+gem 'humanize_boolean'
+gem 'lazy_high_charts'
+#convert xls to  yaml
+gem 'heart_seed'
+
 gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
