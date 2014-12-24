@@ -1,4 +1,8 @@
 Codability::Application.routes.draw do
+  devise_for :admins
+
+  devise_for :users
+
   get "aptitude/start"
 
   get "aptitude/end"
