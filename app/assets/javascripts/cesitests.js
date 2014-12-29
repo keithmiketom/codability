@@ -3,7 +3,7 @@
     $(document).ready(function () {
 
         // Build the chart
-        $('#chartcesi').highcharts({
+        $('#chartcesi1').highcharts({
             chart: {
                 plotBackgroundColor: null,
                 plotBorderWidth: null,
@@ -43,248 +43,9 @@
                 ]
             }]
         });
-        // Build the chart
-        $('#chart2cesi').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
-            title: {
-                text: 'Do you teach a second Subject?'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                type: 'pie',
-                name: 'Do you teach a second subject?',
-                data: [
-                    ['No',   44.74],
-                    {
-                        name: 'Yes',
-                        y: 55.26,
-                        sliced: true,
-                        selected: true
-                    }
-                ]
-            }]
-        });
-        
-            // Build the chart
-            $('#chart3cesi').highcharts({
-                chart: {
-                    plotBackgroundColor: null,
-                    plotBorderWidth: null,
-                    plotShadow: false
-                },
-                title: {
-                    text: 'If you teach a second subject, what do you teach?'
-                },
-                tooltip: {
-                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-                },
-                plotOptions: {
-                    pie: {
-                        allowPointSelect: true,
-                        cursor: 'pointer',
-                        dataLabels: {
-                            enabled: false
-                        },
-                        showInLegend: true
-                    }
-                },
-                series: [{
-                    type: 'pie',
-                    name: 'Second Subject',
-                    data: [
-                        ['History',   2.78],
-                        {
-                            name: 'SPHE',
-                            y: 21.30,
-                            sliced: true,
-                            selected: true
-                        },
-                        ['Technical Graphics',    0.93],
-                        ['ICT CoderDojo',    0],
-                        ['ICT Coding',   1.85],
-                        ['ICT ECDL',     5.56],
-                        ['Religion',   2.78],
-                        ['ICT Digital Art',     12.96],
-                         {
-                            name: 'CSPE',
-                            y: 19.44,
-                            sliced: true,
-                            selected: true
-                        },
-                        ['ICT Digital Cre8or',   0.93],
-                        ['Resource/LS',     15.74],
-                        ['DGC',   2.78],
-                        ['Other',   7.41]
-                        
-                    ]
-                }]
-            });
-            
-            // add COding words nad phrases qs
-             //build
-              $('#chart55cesi').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Do you have significant knowledge on any of the following computer languages, tools or terminology?'
-        },
-        subtitle: {
-            text: 'Part 1'
-        },
-        xAxis: {
-            categories: [
-                '(X)HTML',
-                'CSS',
-                'Sass/LESS',
-                'JavaScript',
-                'jQuery',
-                'Angular.js',
-                'Node.js',
-                'CoffeeScript',
-                'Scratch',
-                'Perl',
-                'PHP/Wordpress',
-                'Drupal',
-                'Cloud',
-                'Jade',
-                'Haml'
-                
-                
-            ]
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Respondents'
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Very Insignificant',
-            data: [13, 26, 31, 19, 32, 34, 33, 34, 26, 34, 17, 35, 14, 35, 36 ]
-
-        }, {
-            name: 'Insignificant',
-            data: [11, 13, 17, 6, 15, 17, 18, 17, 14, 17, 9, 16, 4, 17, 16]
-
-        }, {
-            name: 'Neutral',
-            data: [15, 11, 11, 19, 10, 7, 7, 6, 13, 7, 15, 7, 14, 6, 7 ]
-
-        },{
-            name: 'Significant',
-            data: [17, 7, 0, 13, 2, 1, 1, 4, 1, 14, 0, 16, 1, 0 ]
-
-        }, {
-            name: 'Very Significant',
-            data: [3, 2, 0, 2, 0, 0, 0, 0, 2, 0, 4, 1, 11, 0, 0 ]
-
-        }]
-    });
-  //build
-              $('#chart56cesi').highcharts({
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Do you have significant knowledge on any of the following computer languages, tools or terminology?'
-        },
-        subtitle: {
-            text: 'Part 2'
-        },
-        xAxis: {
-            categories: [
-                'C#',
-                'Objective-C',
-                'C++',
-                'Python',
-                'Ruby/Rails',
-                'MySQL',
-                'Java',
-                'Visual Basic',
-                'ASP.NET',
-                'Azure',
-                'Git',
-                'Subversion',
-                'Scala'
-            ]
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Respondents'
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Very Insignificant',
-            data: [36, 34, 34, 34, 34, 32, 19, 19, 34, 33, 31, 34, 33 ]
-
-        }, {
-            name: 'Insignificant',
-            data: [13, 14, 13, 16, 18, 16, 8, 14, 14, 16, 15, 17, 18]
-
-        }, {
-            name: 'Neutral',
-            data: [9, 11, 10, 8, 7, 10, 18, 12, 8, 8, 11, 7, 7]
-
-        },{
-            name: 'Significant',
-            data: [1, 0, 0, 1, 0, 1, 11, 2, 2, 1, 1, 0, 0 ]
-
-        }, {
-            name: 'Very Significant',
-            data: [0, 0, 2, 0, 0, 0, 3, 2, 1, 1, 1, 1, 1]
-
-        }]
-    });
-
-            //here
+                   //here
             //build
-              $('#chart35cesi').highcharts({
+              $('#chartcesi2').highcharts({
         chart: {
             type: 'column'
         },
@@ -351,7 +112,7 @@
         }]
     });
   //build
-              $('#chart36cesi').highcharts({
+              $('#chartcesi3').highcharts({
         chart: {
             type: 'column'
         },
@@ -415,17 +176,216 @@
 
         }]
     });
+     
             
-            
-            
-            
-            
-            
-            
-            
-            
+        // Build the chart
+        $('#chartcesi4').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'What is your Primary Subject?'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'I teach',
+                data: [
+                    ['Irish',   6.38],
+                    ['English',   4.26],
+                    ['Maths',   17.02],
+                    ['History',   2.13],
+                    ['Geography',   14.89],
+                    ['MFL',   4.26],
+                    ['Music',   0],
+                    ['Art',   4.26],
+                    ['DCG',   0],
+                    ['Science',   17.02],
+                    ['Woodwork',   4.26],
+                    ['Metalwork',   0],
+                    ['Technology',   0],
+                    ['Religion',   0],
+                    ['CSPE',   0],
+                    ['SPHE',   2.13],
+                    ['Resource/LS',   2.13],
+                    ['ICT - Programs', 4.26],
+                    ['ICT - Coding', 4.26],
+                    ['0ther',   8.51],
+                    ['n/a', 4.26]
+ 
+                ]
+            }]
+        });
+        
+            // Build the chart
+            $('#chartcesi5').highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                title: {
+                    text: 'If you teach a second subject, what do you teach?'
+                },
+                tooltip: {
+                    pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: false
+                        },
+                        showInLegend: true
+                    }
+                },
+                series: [{
+                    type: 'pie',
+                    name: 'Second Subject',
+                    data: [
+                        ['Irish',   2.3],
+                        ['English', 3.45],
+                        ['Maths', 21.74],
+                        ['History', 13.04],
+                        ['Geography', 0],
+                        ['MFL', 1.15],
+                        ['Music', 1.15],
+                        ['Art', 1.15],
+                        ['Technical Graphics',    1.15],
+                        ['Woodwork', 1.15],
+                        ['Metalwork', 1.15],
+                        ['Technology', 4.6],
+                        ['Science', 4.6],
+                        ['Religion', 4.6],
+                        ['CSPE', 6.9],
+                        ['SPHE', 4.6],
+                        ['Resource/LS',     2.3],
+                        ['ICT Programs',     20.69],
+                        ['ICT Coding',   9.2],
+                        ['Other/Business',   8.05],
+                        ['n/a', 3.45]
+                        
+                    ]
+                }]
+            });
+             // add COding words nad phrases qs
+             //build
+              $('#chartcesi4b').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'What is your second subject?'
+        },
+        subtitle: {
+            text: 'Number view'
+        },
+        xAxis: {
+            categories: [
+                'Irish',
+                'English', 
+                'Maths',
+				'History',
+				'Geography',
+				'MFL', 
+				'Music',
+				'Art', 
+				'TG/DCG', 
+				'Woodwork', 
+				'Metalwork',
+				'Technology', 
+				'Science', 
+				'RE',
+				'CSPE', 
+				'SPHE', 
+				'Resource',
+				'ICT Programs', 
+				'ICT Coding', 
+				'Other | Business',
+				'n/a'
+                
+                
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Respondents'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Numbers Teaching',
+            data: [2, 3, 10, 6, 0, 2, 1, 1, 1, 1, 0, 4, 4, 4, 6, 4, 2, 18, 8, 7, 3 ]
+
+        }
+        ]
+    });
+          // Build the chart
+        $('#chartcesi6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: 'Are you registerd to teach your second subject with teaching council?'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'registered?',
+                data: [
+                	['Yes', 57.9],
+                    ['No',   26.3],
+                    ['Don\'t know', 15.8 ]
+                    
+                    
+                ]
+            }]
+        });
             // Build
-            $('#chart4cesi').highcharts({
+            $('#chartcesi7').highcharts({
             chart: {
                 type: 'column'
             },
@@ -469,61 +429,170 @@
             },
             series: [{
                 name: 'Strongly Disagree',
-                data: [0, 9, 4, 14, 23, 1, 2, 20]
+                data: [2, 8, 6, 6, 13, 1, 1, 17 ]
     
             }, {
                 name: 'Disagree',
-                data: [2, 14, 8, 18, 19, 0, 7, 24]
+                data: [2, 8, 3, 2, 16, 0, 0, 11]
     
             }, {
                 name: 'Aware of but not used',
-                data: [12, 25, 26, 15, 14, 0, 10, 11]
+                data: [10, 18, 13, 9, 8, 1, 4, 8]
     
             },{
                 name: 'Agree',
-                data: [32, 6, 15, 9, 2, 17, 19, 3]
+                data: [18, 6, 15, 5, 5, 10, 5]
     
             }, {
                 name: 'Strongly Agree',
-                data: [13, 5, 6, 3, 1, 41, 21, 1]
+                data: [11, 3, 6, 4, 1, 36, 28, 2]
     
             }]
-        });
-        // Build the chart
-        $('#chart5cesi').highcharts({
-            chart: {
-                plotBackgroundColor: null,
-                plotBorderWidth: null,
-                plotShadow: false
-            },
+        });  
+            // add COding words nad phrases qs
+             //build
+              $('#chart55cesi').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Do you have significant knowledge on any of the following computer languages, tools or terminology?'
+        },
+        subtitle: {
+            text: 'Part 1'
+        },
+        xAxis: {
+            categories: [
+                '(X)HTML',
+                'CSS',
+                'Sass/LESS',
+                'JavaScript | jQuery | CoffeeScript',
+                'jQuery',
+                'Angular.js',
+                'Node.js',
+                'CoffeeScript',
+                'Scratch | Logo',
+                'C#,
+                'Objective-C',
+                'C++',
+                'Perl'
+                
+                
+            ]
+        },
+        yAxis: {
+            min: 0,
             title: {
-                text: 'Are you registerd to teach your second subject with teaching council?'
-            },
-            tooltip: {
-                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
-            },
-            plotOptions: {
-                pie: {
-                    allowPointSelect: true,
-                    cursor: 'pointer',
-                    dataLabels: {
-                        enabled: false
-                    },
-                    showInLegend: true
-                }
-            },
-            series: [{
-                type: 'pie',
-                name: 'registered?',
-                data: [
-                	['Yes', 57.9],
-                    ['No',   26.3],
-                    ['Don\'t know', 15.8 ]
-                    
-                    
-                ]
-            }]
-        });
+                text: 'Respondents'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Very Insignificant',
+            data: [6, 13, 26, 19, 33, 32, 5, 26, 29, 23, 29 ]
+
+        }, {
+            name: 'Insignificant',
+            data: [5, 4, 9, 9, 6, 5, 4, 7, 6, 9, 6 ]
+
+        }, {
+            name: 'Neutral',
+            data: [11, 11, 6, 7, 4, 6, 6, 7, 5, 7, 6 ]
+
+        },{
+            name: 'Significant',
+            data: [17, 12, 2, 6, 0, 0, 16, 2, 3, 3, 0 ]
+
+        }, {
+            name: 'Very Significant',
+            data: [4, 3, 0, 2, 0, 0, 12, 1, 0, 1, 2 ]
+
+        }]
+    });
+  //build
+              $('#chart56cesi').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Do you have significant knowledge on any of the following computer languages, tools or terminology?'
+        },
+        subtitle: {
+            text: 'Part 2'
+        },
+        xAxis: {
+            categories: [
+                'Python',
+                'Ruby/Rails',
+                'PHP/Wordpress',
+                'MySWL/Postgres',
+                'Java/Scala',
+                'VB/ASP,
+                'Drupal',
+                'Azure',
+                'Cloud',
+                'Git',
+                'Jade | HAML'
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Respondents'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f} </b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Very Insignificant',
+            data: [19, 30, 8, 22, 21, 18, 23, 34, 15, 33, 32 ]
+
+        }, {
+            name: 'Insignificant',
+            data: [11, 8, 3, 6, 8, 9, 9, 5, 3, 3, 6]
+
+        }, {
+            name: 'Neutral',
+            data: [8, 2, 12, 10, 6, 8, 3, 3, 12, 4, 3 ]
+
+        },{
+            name: 'Significant',
+            data: [3, 3, 13, 2, 5, 7, 5, 0, 9, 3, 1 ]
+
+        }, {
+            name: 'Very Significant',
+            data: [2, 0, 7, 3, 3, 1, 3, 1, 4, 1, 1]
+
+        }]
+    });
+
+ 
+  
         // Build the chart
         $('#chart6cesi').highcharts({
             chart: {

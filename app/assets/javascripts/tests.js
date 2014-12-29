@@ -1087,6 +1087,149 @@
         }]
     });
     //next
+     $('#chart29container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Evaluate the following phrases in realtion to Programming and Coding (P+C)'
+        },
+        subtitle: {
+            text: 'Part 1'
+        },
+        xAxis: {
+            categories: [
+                'P+C is Hard',
+                'P+C has nothing to do with Art',
+                'ACD methodologies could help teach coding better',
+                'P+C has much cross Curricular potential',
+                'P+C can improve literacy and numeracy',
+                'The NCCA Draft Syllabus is easy to understand',
+                'There are elements I could teach without knowing code',
+                'Iwould be willing to teach P+C',
+                'Texts and Online resources are useful for helping to teach P+C',
+                'Online resource tailored',
+                'Coding is a skill I would like to learn'
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Response'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Strongly Disagree',
+            data: [1, 11, 1, 0, 0, 1, 4, 5, 0, 0, 1 ] 
+
+        }, {
+            name: 'Disagree',
+            data: [11, 25, 1, 0, 1, 6, 7, 6, 2, 2, 10 ]
+
+        }, {
+            name: 'Neutral',
+            data: [26, 12, 15, 12, 8, 22, 20, 8, 21, 8, 5 ]
+
+        }, 
+        {
+            name: 'Agree',
+            data: [11, 5, 27, 27, 30, 20, 19, 24, 22, 27, 16 ]
+
+        }, {
+            name: 'Strongly Agree',
+            data: [3, 0, 9, 14, 14, 2, 3, 9, 6, 16, 16 ]
+
+        },{
+            name: 'n/a',
+            data: [1, 0, 0, 0, 0, 2, 0, 1, 2, 0, 2 ]
+
+        }]
+    });
+    //next
+     $('#chart39container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Evaluate the following phrases in realtion to Programming and Coding'
+        },
+        subtitle: {
+            text: 'part 2'
+        },
+        xAxis: {
+            categories: [
+                'P+C could be taught alongside Graphics',
+                'Knowing Flash makes P+C easier',
+                'Animation has transferable skills to P+C',
+                'My Students would love to learn P+C',
+                'P+C is important in Irish Society',
+                'You need impressive labs to teach P+C',
+                'I have all teh skills needed to start learning P+C',
+                'Learning P+C to teach would make me more employable',
+                'Principals will want teachers to teach P+C in schools in next 5 years',
+                'P+C will become an important subject in schools'
+                
+            ]
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Response'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        series: [{
+            name: 'Strongly Disagree',
+            data: [1, 1, 0, 0, 0, 2, 10, 1, 1, 0 ] 
+
+        }, {
+            name: 'Disagree',
+            data: [2, 2, 0, 3, 1, 14, 15, 1, 3, 2 ]
+
+        }, {
+            name: 'Neutral',
+            data: [14, 31, 17, 19, 13, 21, 11, 13, 15, 14 ]
+
+        }, 
+        {
+            name: 'Agree',
+            data: [21, 11, 28, 23, 27, 12, 10, 19, 16, 24 ]
+
+        }, {
+            name: 'Strongly Agree',
+            data: [15, 4, 8, 7, 12, 4, 7, 19, 18, 13 ]
+        }, {
+            name: 'n/a',
+            data: [0, 4, 0, 1, 0, 0, 0, 0, 0, 0 ]
+        }]
+    });
     });
 
 });
