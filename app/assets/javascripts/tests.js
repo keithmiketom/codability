@@ -1178,7 +1178,7 @@
                 'My Students would love to learn P+C',
                 'P+C is important in Irish Society',
                 'You need impressive labs to teach P+C',
-                'I have all teh skills needed to start learning P+C',
+                'I have all the skills needed to start learning P+C',
                 'Learning P+C to teach would make me more employable',
                 'Principals will want teachers to teach P+C in schools in next 5 years',
                 'P+C will become an important subject in schools'
